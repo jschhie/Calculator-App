@@ -9,7 +9,7 @@
 <img src="https://github.com/jschhie/calculator-react-app/blob/main/public/calc%20demo.png" height="250px"> 
 
 ## Requirements
-This application requires React's `node_modules` folder, which can be installed using the `npm install` command in Terminal.
+This application requires React's `node_modules` folder, which can be installed using the `npm install` command in Terminal. Additional dependencies are listed in the `package.json` file.
 
 ## Running the Application
 After downloading the requirements above, enter the command in Terminal:
