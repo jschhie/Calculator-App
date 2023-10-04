@@ -1,5 +1,5 @@
 # Simple Calculator React App
-> built with React.js, JavaScript
+> built with React.js, HTML, CSS, JavaScript
 
 ## Features
 * Add, Subtract, Multiply, Divide Operations
