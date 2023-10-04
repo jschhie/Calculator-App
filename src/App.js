@@ -1,7 +1,8 @@
 import {
   useState,
   useRef
-} from "react"; 
+} from "react";
+
 import "./App.css";
 
 function App() { 
@@ -15,25 +16,20 @@ function App() {
   }; 
 
   function minus(e) { 
-  	// Add the code for the minus function 
     e.preventDefault(); 
     setResult((result) => result - Number(inputRef.current.value)); 
   };
  
   function times(e) { 
-    // Add the code for the plus function 
     e.preventDefault(); 
     setResult((result) => result * Number(inputRef.current.value)); 
   }; 
  
-  function divide(e) { 
-    // Add the code for the divide function 
-    
+  function divide(e) {     
     e.preventDefault();
     //setResult((result) => result / Number(inputRef.current.value)); 
 
     // Can't divide by 0
-    
     let divisor = Number(inputRef.current.value); 
     if (divisor == 0 && result == 0) {
       setResult(NaN);
@@ -44,14 +40,12 @@ function App() {
   };
  
   function resetInput(e) { 
-    // Add the code for the resetInput function 
     e.preventDefault(); 
     inputRef.current.value = 0;
     //inputRef.current.value = null;
   }; 
 
   function resetResult(e) { 
-  	// Add the code for the resetResult function 
     e.preventDefault(); 
     setResult(0);
   }; 
@@ -75,10 +69,8 @@ function App() {
         <button onClick={minus}>subtract</button> 
         <button onClick={times}>multiply</button> 
         <button onClick={divide}>divide</button> 
-
         <button onClick={resetInput}>reset input</button>
         <button onClick={resetResult}>reset result</button>
-        
       </form> 
     </div> 
   ); 
