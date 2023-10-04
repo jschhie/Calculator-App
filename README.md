@@ -16,4 +16,4 @@ After downloading the requirements above, enter the command in Terminal:
 
 `npm start`
 
-The user can then access and interact with the website at http://127.0.0.1:3000/ via any web browser on their local machine.
+The user can then access and interact with the website at http://127.0.0.1:3000/ via any web browser on their `localhost`.
