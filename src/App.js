@@ -53,24 +53,24 @@ function App() {
   return ( 
     <div className="App"> 
       <div> 
-        <h1>Simplest Working Calculator</h1> 
+        <h1>React Calculator App</h1> 
       </div> 
       <form> 
-        <p ref={resultRef}> 
+        <p id="result" ref={resultRef}> 
           {result}
         </p> 
         <input
           pattern="[0-9]" 
           ref={inputRef} 
           type="number" 
-          placeholder="Type a number" 
+          placeholder="Type a number"
         /> 
-        <button onClick={plus}>add</button>
-        <button onClick={minus}>subtract</button> 
-        <button onClick={times}>multiply</button> 
-        <button onClick={divide}>divide</button> 
-        <button onClick={resetInput}>reset input</button>
-        <button onClick={resetResult}>reset result</button>
+        <button onClick={plus}>+</button>
+        <button onClick={minus}>-</button> 
+        <button onClick={times}>*</button> 
+        <button onClick={divide}>/</button> 
+        <button onClick={resetInput}>Clear Input</button>
+        <button onClick={resetResult}>Clear Result</button>
       </form> 
     </div> 
   ); 
