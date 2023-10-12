@@ -1,6 +1,6 @@
 body {
   background: transparent; 
-  padding: 0 20px;
+  padding: 0 25px;
   margin: 0;
   height: 100vh;
   display: flex;
@@ -11,40 +11,54 @@ body {
 
 .App {
   color: #72a24d;
+  border: 1px gray solid;
+  border-radius: 8%;
+  padding: 10%;
 }
 
 * {
     font-family: sans-serif;
-  }
-  input,
-  button {
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  input {
-    display: block;
-    margin-bottom: 20px;
-  }
-  button {
-    border: 1px solid gray;
-    background: whitesmoke;
-    margin-right: 5px;
-    padding: 20px;
-  }
+}
 
-  button:nth-child(-n + 6) {
-    font-size: larger;
-    font-weight: bold;
-    border-radius: 20%;
-  }
+input,
+button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
 
-  button:nth-last-child(2),
-  button:nth-last-child(1) {
-    background: orange;
-    color: white;
-  }
+input {
+  display: block;
+  margin-bottom: 20px;
+}
 
-  #result {
-    font-size: x-large;
-  }
+button {
+  border: 1px solid gray;
+  background: whitesmoke;
+  margin-right: 5px;
+  padding: 15px;
+}
+
+.mathOps button {
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 20%;
+  width: 22%;
+}
+
+.mathOps {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.clearOps button {
+  background: orange;
+  color: white;
+  margin-top: 5%;
+  width: 100%;
+}
+
+#result {
+  font-size: x-large;
+  text-align: end;
+}
