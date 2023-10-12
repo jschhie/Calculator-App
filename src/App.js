@@ -30,9 +30,10 @@ function App() {
     //setResult((result) => result / Number(inputRef.current.value)); 
 
     // Can't divide by 0
-    let divisor = Number(inputRef.current.value); 
-    if (divisor == 0 && result == 0) {
-      setResult(NaN);
+    let divisor = Number(inputRef.current.value);
+     
+    if (divisor === 0 && result === 0) {
+      setResult(NaN.toString());
     } else {
       setResult((result) => result / divisor); 
     }
@@ -42,7 +43,6 @@ function App() {
   function resetInput(e) { 
     e.preventDefault(); 
     inputRef.current.value = 0;
-    //inputRef.current.value = null;
   }; 
 
   function resetResult(e) { 
@@ -53,7 +53,7 @@ function App() {
   return ( 
     <div className="App"> 
       <div> 
-        <h1>React Calculator App</h1> 
+        <h1 className="title">React Calculator</h1> 
       </div> 
       <form> 
         <p id="result" ref={resultRef}> 
@@ -65,12 +65,19 @@ function App() {
           type="number" 
           placeholder="Type a number"
         /> 
-        <button onClick={plus}>+</button>
-        <button onClick={minus}>-</button> 
-        <button onClick={times}>*</button> 
-        <button onClick={divide}>/</button> 
-        <button onClick={resetInput}>Clear Input</button>
-        <button onClick={resetResult}>Clear Result</button>
+
+        <div className="mathOps">
+          <button onClick={plus}>+</button>
+          <button onClick={minus}>-</button> 
+          <button onClick={times}>*</button> 
+          <button onClick={divide}>/</button> 
+        </div>
+
+        <div className="clearOps">
+          <button onClick={resetInput}>Clear Input</button>
+          <button onClick={resetResult}>Clear Result</button>
+        </div>
+
       </form> 
     </div> 
   ); 
