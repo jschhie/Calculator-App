@@ -6,7 +6,7 @@
 * Reset Input & Clear Result Functionality
 
 ## Demo
-<img src="https://github.com/jschhie/calculator-react-app/blob/main/public/updated%20demo.png" height="250px"> 
+<img src="https://github.com/jschhie/calculator-react-app/blob/main/public/updated%20demo.png" height="450px"> 
 
 ## Requirements
 This application requires React's `node_modules` folder, which can be installed using the `npm install` command in Terminal. Additional dependencies are listed in the `package.json` file.
