@@ -1,5 +1,5 @@
 # Simple Calculator React App
-> built with React.js, HTML, CSS, JavaScript
+ React.js, HTML, CSS, JavaScript
 
 ## Features
 * Add, Subtract, Multiply, Divide Operations
@@ -9,11 +9,18 @@
 <img src="https://github.com/jschhie/calculator-react-app/blob/main/public/updated%20demo.png" height="450px"> 
 
 ## Requirements
-This application requires React's `node_modules` folder, which can be installed using the `npm install` command in Terminal. Additional dependencies are listed in the `package.json` file.
+1. This application requires the `node_modules` folder for React, which can be installed using the following command in Terminal:
+
+```bash
+npm install
+```
+
+Additional dependencies are listed in the `package.json` file.
 
 ## Running the Application
-After downloading the requirements above, enter the command in Terminal:
+1. After installing the requirements, start the React application by entering:
+```bash
+npm start
+```
 
-`npm start`
-
-The user can then access and interact with the website at http://127.0.0.1:3000/ via any web browser on their `localhost`.
+3. Once the application is running, you can access and interact with the website at: http://127.0.0.1:3000/ via any web browser on your `localhost`.
